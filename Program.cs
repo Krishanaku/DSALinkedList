@@ -13,12 +13,17 @@ namespace DataStructure
             linked.Add(30);
             linked.Add(70);
             linked.Display();
-            linked.InsertAtParticularPosition(2 , 40);
+            int a = linked.Search(30);
+            Console.WriteLine("30 This value is available");
             linked.Display();
             linked.RemoveFirstNode();
             linked.Display();
             linked.RemoveLastNode();
             linked.Display();
+            linked.Search(30);
+            
+            
+            
 
 
 
