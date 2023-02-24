@@ -33,24 +33,26 @@ namespace DataStructure
             Console.WriteLine("{0} insert into linked List ", node.data);
 
         }
-        
+
         public void Display()
         {
-            Node temp =this.head;
-            if(temp == null) 
+            Node temp = this.head;
+            if (temp == null)
             {
                 Console.WriteLine("LinkedList is empty");
                 return;
 
             }
-            
-            while (temp != null) 
+
+            while (temp != null)
             {
-                
-                Console.WriteLine (temp.data + " ");
-                    temp=temp.next;
+
+                Console.WriteLine(temp.data + " ");
+                temp = temp.next;
             }
         }
+
+
 
         public Node InsertAtParticularPosition(int position, int data)
         {
@@ -86,6 +88,23 @@ namespace DataStructure
 
             return head;
         }
+
+        public Node RemoveFirstNode()
+        {
+            if (this.head == null)
+            {
+
+                return null;
+            }
+            Console.WriteLine("When Remove first element");
+            this.head = this.head.next;
+            return this.head;
+        }
+
+
+
+
+
 
 
 
