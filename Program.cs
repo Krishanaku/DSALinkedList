@@ -17,6 +17,9 @@ namespace DataStructure
             linked.Display();
             linked.RemoveFirstNode();
             linked.Display();
+            linked.RemoveLastNode();
+            linked.Display();
+
 
 
 
