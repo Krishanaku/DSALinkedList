@@ -14,7 +14,7 @@ namespace DataStructure
             linked.Add(70);
             linked.Display();
             int a = linked.Search(30);
-            Console.WriteLine("30 This value is available");
+            linked.InsertAtParticularPosition(a + 1, 40);
             linked.Display();
             linked.RemoveFirstNode();
             linked.Display();
