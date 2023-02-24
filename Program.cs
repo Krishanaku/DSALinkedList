@@ -16,11 +16,7 @@ namespace DataStructure
             int a = linked.Search(30);
             linked.InsertAtParticularPosition(a + 1, 40);
             linked.Display();
-            linked.RemoveFirstNode();
-            linked.Display();
-            linked.RemoveLastNode();
-            linked.Display();
-            linked.Search(30);
+
             
             
             
