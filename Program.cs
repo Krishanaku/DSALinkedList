@@ -15,6 +15,10 @@ namespace DataStructure
             linked.Display();
             linked.InsertAtParticularPosition(2 , 40);
             linked.Display();
+            linked.RemoveFirstNode();
+            linked.Display();
+
+
 
         }
     }
