@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection.Metadata.Ecma335;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -10,7 +11,7 @@ namespace DataStructure
     {
         public Node head;
 
-        public void Append(int data)
+        public void Add(int data)
         {
             Node node = new Node(data);
 
@@ -42,23 +43,24 @@ namespace DataStructure
                 return;
 
             }
-            Console.WriteLine("After Appending in LinkedList value!!");
+            
             while (temp != null) 
             {
                 
-                Console.Write(temp.data + " ");
+                Console.WriteLine (temp.data + " ");
                     temp=temp.next;
             }
         }
-        public Node InsertAtParticularPosition(int position , int data) 
+
+        public Node InsertAtParticularPosition(int position, int data)
         {
             if (position < 1)
                 Console.WriteLine("Invalid Position");
-            if(position ==1)
+            if (position == 1)
             {
-                var newNode =new Node(data);
+                var newNode = new Node(data);
                 newNode.next = this.head;
-                head= newNode;
+                head = newNode;
             }
             else
             {
@@ -73,13 +75,19 @@ namespace DataStructure
                     }
                     head = head.next;
                 }
-                if(position !=1) 
+                if (position != 1)
                 {
                     Console.WriteLine("Position out of range");
-                
+
                 }
-                }
+            }
+            Console.WriteLine("After Inserting value in Linkedlist ");
+            
+
             return head;
-         }
+        }
+
+
+
     }
 }
