@@ -9,7 +9,7 @@ namespace DataStructure
             Console.WriteLine("Welcome to DSA LinkedList Problem Problem...");
 
             LinkedList linked = new LinkedList();
-            linked.add(50);
+            linked.add(56);
             linked.add(30);
             linked.add(70);
             linked.Display();
