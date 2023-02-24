@@ -10,7 +10,7 @@ namespace DataStructure
     {
         public Node head;
 
-        public void add(int data)
+        public void Append(int data)
         {
             Node node = new Node(data);
 
@@ -42,7 +42,7 @@ namespace DataStructure
                 return;
 
             }
-            Console.WriteLine("After storing in LinkedList value!!");
+            Console.WriteLine("After Appending in LinkedList value!!");
             while (temp != null) 
             {
                 
@@ -50,8 +50,36 @@ namespace DataStructure
                     temp=temp.next;
             }
         }
-
-
-
+        public Node InsertAtParticularPosition(int position , int data) 
+        {
+            if (position < 1)
+                Console.WriteLine("Invalid Position");
+            if(position ==1)
+            {
+                var newNode =new Node(data);
+                newNode.next = this.head;
+                head= newNode;
+            }
+            else
+            {
+                while (position-- != 0)
+                {
+                    if (position == 1)
+                    {
+                        Node node = new Node(data);
+                        node.next = this.head.next;
+                        head.next = node;
+                        break;
+                    }
+                    head = head.next;
+                }
+                if(position !=1) 
+                {
+                    Console.WriteLine("Position out of range");
+                
+                }
+                }
+            return head;
+         }
     }
 }
